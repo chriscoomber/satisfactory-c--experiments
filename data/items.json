@@ -1,0 +1,612 @@
+[
+  {
+    "id": "Desc_IronPlate_C",
+    "displayName": "Iron Plate",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_IronRod_C",
+    "displayName": "Iron Rod",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Cable_C",
+    "displayName": "Cable",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_IronPlateReinforced_C",
+    "displayName": "Reinforced Iron Plate",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Wire_C",
+    "displayName": "Wire",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_IronIngot_C",
+    "displayName": "Iron Ingot",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SteelIngot_C",
+    "displayName": "Steel Ingot",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_HazmatFilter_C",
+    "displayName": "Iodine-Infused Filter",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Filter_C",
+    "displayName": "Gas Filter",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_AluminumCasing_C",
+    "displayName": "Aluminium Casing",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_AluminumIngot_C",
+    "displayName": "Aluminium Ingot",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_AluminumPlate_C",
+    "displayName": "Alclad Aluminium Sheet",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_AluminumPlateReinforced_C",
+    "displayName": "Heat Sink",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_AluminumScrap_C",
+    "displayName": "Aluminium Scrap",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Computer_C",
+    "displayName": "Computer",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_CopperIngot_C",
+    "displayName": "Copper Ingot",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_CopperSheet_C",
+    "displayName": "Copper Sheet",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_ModularFrame_C",
+    "displayName": "Modular Frame",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_ModularFrameHeavy_C",
+    "displayName": "Heavy Modular Frame",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Motor_C",
+    "displayName": "Motor",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Rotor_C",
+    "displayName": "Rotor",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SteelPipe_C",
+    "displayName": "Steel Pipe",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SteelPlate_C",
+    "displayName": "Steel Beam",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SteelPlateReinforced_C",
+    "displayName": "Encased Industrial Beam",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Fuel_C",
+    "displayName": "Packaged Fuel",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PackagedIonizedFuel_C",
+    "displayName": "Packaged Ionised Fuel",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PackagedRocketFuel_C",
+    "displayName": "Packaged Rocket Fuel",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_TurboFuel_C",
+    "displayName": "Packaged Turbofuel",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Cement_C",
+    "displayName": "Concrete",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_IronScrew_C",
+    "displayName": "Screw",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_1_C",
+    "displayName": "Smart Plating",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_2_C",
+    "displayName": "Versatile Framework",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_3_C",
+    "displayName": "Automated Wiring",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_4_C",
+    "displayName": "Modular Engine",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_5_C",
+    "displayName": "Adaptive Control Unit",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_6_C",
+    "displayName": "Magnetic Field Generator",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_7_C",
+    "displayName": "Assembly Director System",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_8_C",
+    "displayName": "Thermal Propulsion Rocket",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_9_C",
+    "displayName": "Nuclear Pasta",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_11_C",
+    "displayName": "Ballistic Warp Drive",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_12_C",
+    "displayName": "AI Expansion Server",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SpaceElevatorPart_10_C",
+    "displayName": "Biochemical Sculptor",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Silica_C",
+    "displayName": "Silica",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_LiquidFuel_C",
+    "displayName": "Fuel",
+    "form": "liquid"
+  },
+  {
+    "id": "Desc_Plastic_C",
+    "displayName": "Plastic",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_CircuitBoard_C",
+    "displayName": "Circuit Board",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Rubber_C",
+    "displayName": "Rubber",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PolymerResin_C",
+    "displayName": "Polymer Resin",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_HeavyOilResidue_C",
+    "displayName": "Heavy Oil Residue",
+    "form": "liquid"
+  },
+  {
+    "id": "Desc_PetroleumCoke_C",
+    "displayName": "Petroleum Coke",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_HighSpeedWire_C",
+    "displayName": "Quickwire",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_HighSpeedConnector_C",
+    "displayName": "High-Speed Connector",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_NuclearWaste_C",
+    "displayName": "Uranium Waste",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PlutoniumWaste_C",
+    "displayName": "Plutonium Waste",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_CoolingSystem_C",
+    "displayName": "Cooling System",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_CrystalOscillator_C",
+    "displayName": "Crystal Oscillator",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_ElectromagneticControlRod_C",
+    "displayName": "Electromagnetic Control Rod",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_ModularFrameFused_C",
+    "displayName": "Fused Modular Frame",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_MotorLightweight_C",
+    "displayName": "Turbo Motor",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_QuartzCrystal_C",
+    "displayName": "Quartz Crystal",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Stator_C",
+    "displayName": "Stator",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Crystal_C",
+    "displayName": "Blue Power Slug",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Crystal_mk2_C",
+    "displayName": "Yellow Power Slug",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Crystal_mk3_C",
+    "displayName": "Purple Power Slug",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Battery_C",
+    "displayName": "Battery",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_GoldIngot_C",
+    "displayName": "Caterium Ingot",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_CircuitBoardHighSpeed_C",
+    "displayName": "AI Limiter",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_NitricAcid_C",
+    "displayName": "Nitric Acid",
+    "form": "liquid"
+  },
+  {
+    "id": "Desc_SulfuricAcid_C",
+    "displayName": "Sulphuric Acid",
+    "form": "liquid"
+  },
+  {
+    "id": "Desc_Gunpowder_C",
+    "displayName": "Black Powder",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PlutoniumCell_C",
+    "displayName": "Encased Plutonium Cell",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PlutoniumPellet_C",
+    "displayName": "Plutonium Pellet",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_ModularFrameLightweight_C",
+    "displayName": "Radio Control Unit",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PressureConversionCube_C",
+    "displayName": "Pressure Conversion Cube",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_GasTank_C",
+    "displayName": "Empty Fluid Tank",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_NonFissibleUranium_C",
+    "displayName": "Non-Fissile Uranium",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_ComputerSuper_C",
+    "displayName": "Supercomputer",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_CopperDust_C",
+    "displayName": "Copper Powder",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_TimeCrystal_C",
+    "displayName": "Time Crystal",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Diamond_C",
+    "displayName": "Diamonds",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SAMFluctuator_C",
+    "displayName": "SAM Fluctuator",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SAMIngot_C",
+    "displayName": "Reanimated SAM",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_FicsiteIngot_C",
+    "displayName": "Ficsite Ingot",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_FicsiteMesh_C",
+    "displayName": "Ficsite Trigon",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_DarkEnergy_C",
+    "displayName": "Dark Matter Residue",
+    "form": "gas"
+  },
+  {
+    "id": "Desc_QuantumEnergy_C",
+    "displayName": "Excited Photonic Matter",
+    "form": "gas"
+  },
+  {
+    "id": "Desc_DarkMatter_C",
+    "displayName": "Dark Matter Crystal",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_QuantumOscillator_C",
+    "displayName": "Superposition Oscillator",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_TemporalProcessor_C",
+    "displayName": "Neural-Quantum Processor",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_RocketFuel_C",
+    "displayName": "Rocket Fuel",
+    "form": "gas"
+  },
+  {
+    "id": "Desc_LiquidTurboFuel_C",
+    "displayName": "Turbofuel",
+    "form": "liquid"
+  },
+  {
+    "id": "Desc_CompactedCoal_C",
+    "displayName": "Compacted Coal",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_IonizedFuel_C",
+    "displayName": "Ionised Fuel",
+    "form": "gas"
+  },
+  {
+    "id": "Desc_UraniumCell_C",
+    "displayName": "Encased Uranium Cell",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_AluminaSolution_C",
+    "displayName": "Alumina Solution",
+    "form": "liquid"
+  },
+  {
+    "id": "Desc_FluidCanister_C",
+    "displayName": "Empty Canister",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PackagedOil_C",
+    "displayName": "Packaged Oil",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PackagedOilResidue_C",
+    "displayName": "Packaged Heavy Oil Residue",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_PackagedWater_C",
+    "displayName": "Packaged Water",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_GunpowderMK2_C",
+    "displayName": "Smokeless Powder",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_AlienProtein_C",
+    "displayName": "Alien Protein",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasStar_C",
+    "displayName": "FICSMAS Wonder Star",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasBallCluster_C",
+    "displayName": "FICSMAS Ornament Bundle",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasBranch_C",
+    "displayName": "FICSMAS Tree Branch",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasWreath_C",
+    "displayName": "FICSMAS Wreath",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasDataCartridge4_C",
+    "displayName": "FICSMAS Data Cartridge Day 14",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Gift_C",
+    "displayName": "FICSMAS Gift",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Snow_C",
+    "displayName": "FICSMAS Actual Snow",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_CandyCane_C",
+    "displayName": "Candy Cane",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasBow_C",
+    "displayName": "FICSMAS Bow",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasDataCartridge3_C",
+    "displayName": "FICSMAS Data Cartridge Day 8",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasBall1_C",
+    "displayName": "Red FICSMAS Ornament",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasBall2_C",
+    "displayName": "Blue FICSMAS Ornament",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasBall3_C",
+    "displayName": "Copper FICSMAS Ornament",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasBall4_C",
+    "displayName": "Iron FICSMAS Ornament",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasDataCartridge2_C",
+    "displayName": "FICSMAS Data Cartridge Day 4",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_XmasDataCartridge1_C",
+    "displayName": "FICSMAS Data Cartridge Day 1",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_WAT2_C",
+    "displayName": "Mercer Sphere",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_SingularityCell_C",
+    "displayName": "Singularity Cell",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_AlienDNACapsule_C",
+    "displayName": "Alien DNA Capsule",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Ficsonium_C",
+    "displayName": "Ficsonium",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_DissolvedSilica_C",
+    "displayName": "Dissolved Silica",
+    "form": "liquid"
+  }
+]

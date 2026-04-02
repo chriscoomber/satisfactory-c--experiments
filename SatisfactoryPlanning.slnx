@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="SatisfactoryPlanning.vcxproj" Id="619eda6d-fec4-4282-8e97-98728224e75c" />
+</Solution>

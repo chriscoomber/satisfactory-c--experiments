@@ -1,0 +1,34 @@
+[
+  {
+    "id": "Build_ConstructorMk1_C",
+    "canChangeProductionBoost": true
+  },
+  {
+    "id": "Build_SmelterMk1_C",
+    "canChangeProductionBoost": true
+  },
+  {
+    "id": "Build_FoundryMk1_C",
+    "canChangeProductionBoost": true
+  },
+  {
+    "id": "Build_OilRefinery_C",
+    "canChangeProductionBoost": true
+  },
+  {
+    "id": "Build_Packager_C",
+    "canChangeProductionBoost": false
+  },
+  {
+    "id": "Build_ManufacturerMk1_C",
+    "canChangeProductionBoost": true
+  },
+  {
+    "id": "Build_AssemblerMk1_C",
+    "canChangeProductionBoost": true
+  },
+  {
+    "id": "Build_Blender_C",
+    "canChangeProductionBoost": true
+  }
+]
