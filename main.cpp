@@ -1,6 +1,8 @@
 #include "Item.h"
 #include "Recipe.h"
 #include "nlohmann/json_fwd.hpp"
+#include "simplex.h"
+#include <array>
 #include <fstream>
 #include <iostream>
 #include <map>
@@ -40,6 +42,37 @@ int main()
 	// Test
 	std::cout << items["Desc_IronRod_C"] << "\n";
 	std::cout << recipes["Recipe_IronPlateReinforced_C"] << "\n";
+
+	const std::size_t N{ 2 };
+	const std::size_t M{ 3 };
+
+	std::array<std::array<double, N>, M> A{ };
+	std::array<double, M> b{  };
+	std::array<double, N> c{ };
+
+	// Unbounded
+	//A[0][0] = 1; A[0][1] = -1; A[0][2] = 1;
+	//A[1][0] = -2; A[1][1] = 1; A[1][2] = 0;
+	//A[2][0] = 0; A[2][1] = 1; A[2][2] = -2;
+	//b[0] = 5; b[1] = 3; b[2] = 5;
+	//c[0] = 0; c[1] = 2; c[2] = 1;
+
+	// Infeasible
+	A[0][0] = -1; A[0][1] = 1;
+	A[1][0] = 1; A[1][1] = 1;
+	A[2][0] = 1; A[2][1] = -4;
+	b[0] = 8; b[1] = -3; b[2] = 2;
+	c[0] = 1; c[1] = 3;
+
+	auto x = simplex<M, N>(A, b, c);
+	if (!x) {
+		std::cout << "Infeasible!";
+	}
+	else {
+		for (int i{ 0 }; i < x->size(); ++i) {
+			std::cout << (*x)[i] << " ";
+		}
+	}
 
 	return 0;
 }
