@@ -7157,5 +7157,174 @@
     ],
     "duration": 24,
     "sloopable": true
+  },
+  {
+    "id": "MineOreIron",
+    "displayName": "Mine Ore Iron",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_OreIron_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "MineCoal",
+    "displayName": "Mine Coal",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_Coal_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "MineOreCopper",
+    "displayName": "Mine Copper Ore",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_OreCopper_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "MineStone",
+    "displayName": "Mine Limestone",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_Stone_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "MineRawQuartz",
+    "displayName": "Mine Raw Quartz",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_RawQuartz_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "ExtractLiquidOil",
+    "displayName": "Extract Crude Oil",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_LiquidOil_C",
+        "amount": 1000
+      }
+    ],
+    "duration": 0.2,
+    "sloopable": false
+  },
+  {
+    "id": "ExtractWater",
+    "displayName": "Extract Water",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_Water_C",
+        "amount": 1000
+      }
+    ],
+    "duration": 0.2,
+    "sloopable": false
+  },
+  {
+    "id": "MineSAM",
+    "displayName": "Mine SAM",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_SAM_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "ExtractNitrogenGas",
+    "displayName": "Extract Nitrogen Gas",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_NitrogenGas_C",
+        "amount": 1000
+      }
+    ],
+    "duration": 0.2,
+    "sloopable": false
+  },
+  {
+    "id": "MineOreBauxite",
+    "displayName": "Mine Bauxite Ore",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_OreBauxite_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "MineOreGold",
+    "displayName": "Mine Gold Ore",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_OreGold_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "MineSulfur",
+    "displayName": "Mine Sulfur",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_Sulfur_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
+  },
+  {
+    "id": "MineOreUranium",
+    "displayName": "Mine Uranium Ore",
+    "ingredients": [],
+    "products": [
+      {
+        "itemId": "Desc_OreUranium_C",
+        "amount": 1
+      }
+    ],
+    "duration": 0.1,
+    "sloopable": false
   }
 ]

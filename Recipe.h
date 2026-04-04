@@ -45,5 +45,5 @@ Recipe recipeFromJson(const json& j) {
 		products.push_back(ingredientFromJson(value));
 	}
 
-	return Recipe{ .id{j["id"]}, .displayName{j["displayName"]}, .ingredients{ingredients}, .products{products} };
+	return Recipe{ .id{j["id"]}, .displayName{j["displayName"]}, .ingredients{ingredients}, .products{products}, .duration{j["duration"]}, .sloopable{j["sloopable"]} };
 }

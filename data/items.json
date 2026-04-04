@@ -608,5 +608,70 @@
     "id": "Desc_DissolvedSilica_C",
     "displayName": "Dissolved Silica",
     "form": "liquid"
+  },
+  {
+    "id": "Desc_OreIron_C",
+    "displayName": "Iron Ore",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Coal_C",
+    "displayName": "Coal",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_OreCopper_C",
+    "displayName": "Copper Ore",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Stone_C",
+    "displayName": "Limestone",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_RawQuartz_C",
+    "displayName": "Raw Quartz",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_LiquidOil_C",
+    "displayName": "Crude Oil",
+    "form": "liquid"
+  },
+  {
+    "id": "Desc_Water_C",
+    "displayName": "Water",
+    "form": "liquid"
+  },
+  {
+    "id": "Desc_SAM_C",
+    "displayName": "SAM",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_NitrogenGas_C",
+    "displayName": "Nitrogen Gas",
+    "form": "gas"
+  },
+  {
+    "id": "Desc_OreBauxite_C",
+    "displayName": "Bauxite",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_OreGold_C",
+    "displayName": "Caterium Ore",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_Sulfur_C",
+    "displayName": "Sulphur",
+    "form": "solid"
+  },
+  {
+    "id": "Desc_OreUranium_C",
+    "displayName": "Uranium",
+    "form": "solid"
   }
 ]
