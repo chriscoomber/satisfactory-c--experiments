@@ -18,8 +18,8 @@ struct Recipe {
 	std::string displayName;
 	std::vector<Ingredient> ingredients;
 	std::vector<Ingredient> products;
-	double duration; // in seconds
-	bool sloopable;
+	double duration{ 0 }; // in seconds
+	bool sloopable{ false };
 };
 
 std::ostream& operator<<(std::ostream& os, const Recipe& recipe) {

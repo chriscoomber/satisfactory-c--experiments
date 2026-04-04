@@ -3,7 +3,6 @@
 #include <algorithm>
 #include <array>
 #include <cfloat>
-#include <cstdlib>
 #include <optional>
 #include <stdexcept>
 #include <utility>
@@ -18,18 +17,80 @@
 /// - A (MxN matrix) and b (M vector) form the constraints, i.e. a[m,1] * x[1] + ... + a[m,N] * x[N] <= b[m], for all m=1,...,M
 /// - c (N vector) is the goal vector, so we're maximizing c[1]x[1] + ... + c[N]x[N]
 /// - x[n] >= 0 for all n=1,...,N
+/// 
+/// If minimize is set, then this function instead solves Ax >= b, x>=0, minimizing c.x.
 /// </summary>
 /// <typeparam name="M">the number of constraints</typeparam>
 /// <typeparam name="N">the number of variables</typeparam>
 /// <param name="A">A: constraint coefficients</param>
 /// <param name="b">b: constraint bounds</param>
 /// <param name="c">c: goal function</param>
-/// <returns>x: solution, or empty if infeasible</returns>
+/// <param name="minimize">whether to minimize the goal function instead (default: false, i.e. maximize)</param>
+/// <returns>x: solution, or empty if infeasible or unbounded</returns>
 template <std::size_t M, std::size_t N>
 std::optional<std::array<double, N>> simplex(
-	std::array<std::array<double, N>, M>& A,
-	std::array<double, M>& b,
-	std::array<double, N>& c
+	const std::array<std::array<double, N>, M>& A,
+	const std::array<double, M>& b,
+	const std::array<double, N>& c,
+	bool minimize = false
+)
+{
+	if (minimize) {
+		// First call simplexMaximize, but with some adjusted parameters:
+		// A -> A transpose
+		// b -> c
+		// c -> b
+		// This is the "dual LP"
+		auto result{ simplexMaximize<N,M>(transpose<M,N>(A), c, b) };
+		if (!result) return {};
+
+		// Then the solution to our original ("primal") LP are the slack parameters
+		return result->s;
+	}
+	else {
+		// Just call simplexMaximize
+		auto result{ simplexMaximize<M,N>(A, b, c) };
+		if (!result) return {};
+		return result->x;
+	}
+}
+
+/// <summary>
+/// Transpose an MxN matrix. Creates a new matrix, doesn't mutate the original.
+/// </summary>
+/// <param name="A">The matrix to transpose</param>
+/// <returns>The NxM matrix A transposed</returns>
+template <std::size_t M, std::size_t N>
+const std::array<std::array<double, M>, N> transpose(
+	const std::array<std::array<double, N>, M>& A
+)
+{
+	std::array<std::array<double, M>, N> ATranspose{};
+	for (std::size_t m{ 0 }; m < M; ++m) {
+		for (std::size_t n{ 0 }; n < N; ++n) {
+			ATranspose[n][m] = A[m][n];
+		}
+	}
+
+	return ATranspose;
+}
+
+template <std::size_t M, std::size_t N>
+struct SimplexMaximizeResult {
+	std::array<double, N> x;
+	std::array<double, M> s;
+};
+
+/// <summary>
+/// Main algorithm for the simplex goal-maximization problem.
+/// Same arguments as for `simplex`.
+/// </summary>
+/// <returns>An object containing the solution x and final slack values s, or empty if infeasible or unbounded.</returns>
+template <std::size_t M, std::size_t N>
+std::optional<SimplexMaximizeResult<M, N>> simplexMaximize(
+	const std::array<std::array<double, N>, M>& A,
+	const std::array<double, M>& b,
+	const std::array<double, N>& c
 )
 {
 	// Imagine a block matrix (aka tableu) of the following form: (where m=2, n=3 as an example)
@@ -87,9 +148,9 @@ std::optional<std::array<double, N>> simplex(
 
 	// Read off the solution
 	std::array<double, N> x{};
-	for (int n{ 0 }; n < N; ++n) {
+	for (std::size_t n{ 0 }; n < N; ++n) {
 		// Read off the value for the row in which this column is non-zero
-		for (int m{ 0 }; m < M; ++m) {
+		for (std::size_t m{ 0 }; m < M; ++m) {
 			if (std::abs(tableu[m + 1][n + 1]) > 1e-5) {
 				// This is the row which defines x[n]
 				x[n] = tableu[m + 1][1 + N + M] / tableu[m + 1][n + 1];
@@ -98,7 +159,13 @@ std::optional<std::array<double, N>> simplex(
 		}
 	}
 
-	return x;
+	// Also read off the final slack values, as sometimes these are useful
+	std::array<double, M> s{};
+	for (std::size_t m{ 0 }; m < M; ++m) {
+		s[m] = tableu[0][1 + N + m];
+	}
+
+	return SimplexMaximizeResult<M, N>{.x{ x }, .s{ s } };
 }
 
 /// <summary>
@@ -132,8 +199,10 @@ std::optional<std::pair<std::size_t, std::size_t>> pickPivot(
 )
 {
 	std::size_t nPivot = 0; // 0 is a sentinel value that indicates not found, since row 0 is never a valid column pivot
+	double bestPivot = 0.0;
 	for (std::size_t n{ 1 }; n < 1 + N + M + 1; ++n) {
-		if (tableu[0][n] < 0) {
+		if (tableu[0][n] < bestPivot) {
+			bestPivot = tableu[0][n];
 			nPivot = n;
 			break;
 		}
@@ -189,5 +258,3 @@ void doPivot(
 		}
 	}
 }
-
-// TODO: invert problem for minimizing...

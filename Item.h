@@ -15,7 +15,7 @@ struct Item {
 	};
 	std::string id;
 	std::string displayName;
-	Form form;
+	Form form{ Form::solid };
 };
 
 std::ostream& operator<<(std::ostream& os, const Item& item) {
